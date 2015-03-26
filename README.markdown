@@ -49,6 +49,7 @@ The `puppet` class installs puppet from packages available to whichever reposito
 * **showdiff**: If this is set to `true` file changes will be reported as diffs in the puppet agent reports. The default value is `false`. **WARNING**: Enabling this may expose sensitive information as clear text in puppet reports, this setting should only be used for debugging and testing purposes.
 * **environment**: This sets the environment in the agent block. The default value is the same as the `environment` fact provided by facter.
 * **dns_alt_names**: Expects an array of names to add to the puppet master's certificate as aliases. The default is undefined which leaves this unconfigured.
+* **stringify_facts**: Turn on/off stringification of facts for puppet 3.3 and above. Defaults to true there.
 
 ## `puppet::conf`
 
