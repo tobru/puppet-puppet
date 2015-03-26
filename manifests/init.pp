@@ -48,7 +48,8 @@ class puppet (
   $showdiff             = undef,
   $pluginsync           = false,
   $environment          = $::environment,
-  $dns_alt_names        = undef
+  $dns_alt_names        = undef,
+  $stringify_facts      = undef
 ) inherits puppet::params {
 
   $puppet_conf_path     = "${conf_dir}/${::puppet::params::conf_file}"

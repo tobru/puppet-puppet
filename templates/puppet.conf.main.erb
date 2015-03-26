@@ -22,3 +22,6 @@
   <%- if @dns_alt_names -%>
   dns_alt_names = <%= @dns_alt_names_str %>
   <%- end -%>
+  <%- if @stringify_facts -%>
+  stringify_facts           = <%= @stringify_facts %>
+  <%- end -%>

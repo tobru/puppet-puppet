@@ -49,6 +49,7 @@ The `puppet` class installs puppet from packages available to whichever reposito
 * **showdiff**: If this is set to `true` file changes will be reported as diffs in the puppet agent reports. The default value is `false`. **WARNING**: Enabling this may expose sensitive information as clear text in puppet reports, this setting should only be used for debugging and testing purposes.
 * **environment**: This sets the environment in the agent block. The default value is the same as the `environment` fact provided by facter.
 * **dns_alt_names**: Expects an array of names to add to the puppet master's certificate as aliases. The default is undefined which leaves this unconfigured.
+* **stringify_facts**: Turn on/off stringification of facts for puppet 3.3 and above. Defaults to true there.
 
 ## `puppet::conf`
 
@@ -105,6 +106,7 @@ This class installs a Puppetmaster on [Passenger](https://www.phusionpassenger.c
 * **node_terminus**: This specifies the node_terminus setting for configuring an ENC
 * **external_nodes**: ENC executable without any parameters
 * **environmentpath_rec**: Manage the environments directory recursively. Default: true.
+* **stringify_facts**: Turn on/off stringification of facts for puppet 3.3 and above. Defaults to true there.
 
 **NOTE**: Setting the `http` report handler without providing a reporting URL to the `reporturl` parameter may lead to unexpected behaviour by the Puppetmaster.
 

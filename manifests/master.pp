@@ -18,6 +18,7 @@ class puppet::master (
   $autosign             = undef,
   $autosign_conf_path   = $::puppet::params::autosign_conf_path,
   $trusted_node_data    = false,
+  $stringify_facts      = undef,
   $node_terminus        = undef,
   $external_nodes       = undef,
 ) inherits puppet::params {
