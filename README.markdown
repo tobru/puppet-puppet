@@ -105,6 +105,7 @@ This class installs a Puppetmaster on [Passenger](https://www.phusionpassenger.c
 * **node_terminus**: This specifies the node_terminus setting for configuring an ENC
 * **external_nodes**: ENC executable without any parameters
 * **environmentpath_rec**: Manage the environments directory recursively. Default: true.
+* **stringify_facts**: Turn on/off stringification of facts for puppet 3.3 and above. Defaults to true there.
 
 **NOTE**: Setting the `http` report handler without providing a reporting URL to the `reporturl` parameter may lead to unexpected behaviour by the Puppetmaster.
 
